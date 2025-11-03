@@ -25,3 +25,15 @@ Progressivement ces limites seront resolus.
 Aujourd’hui l’outil est encore un script. La future étape sera principalement le déploiement avec une interface graphique.
 
 Une documentation plus détaillée sur les étapes du développement sera publiée ulterieurement.
+
+## <ins>Développement technique de l'outil</ins>
+- **Langage :** Python 3.10  
+- **Structure modulaire :** plusieurs scripts, chacun avec une fonctionnalité spécifique.
+
+| Fichiers                  | Description                                  |
+|-----------------------------------|----------------------------------------------|
+| **config_dataset.json**            | Liste des données environnementales et leurs paramètres |
+| **config_urls.json**               | URLs utilisées par l’outil                    |
+| **xml_builder.py**                 | Construction des requêtes de recherche        |
+| **main.py**                        | Script principal (point d’entrée de l’outil). C'est ce script qui est utilisé pour lancer l'outil  |
+| **requirements.txt**               | Liste des dépendances Python                   |
