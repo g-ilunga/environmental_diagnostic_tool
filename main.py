@@ -20,12 +20,12 @@ from xml_builder import data_to_post
 # INITIAL CONFIGURATION
 #======================================================================================
 # Paths to necessary input file
-study_area_input_file = "C:/Users/ilung/Documents/Portfolio/diagnostic_tool/test_area/s6.shp" # The input file
+study_area_input_file = "C:/Users/ilung/Documents/diagnostic_tool/study_area/study_area.shp" # The input file
 config_urls_file = "config_urls.json"
 config_dataset_file = "config_dataset.json"
 
 # Path to where the results will be saved
-output_file = "C:/Users/ilung/Documents/Portfolio/diagnostic_tool/diagnostic_tool/output/results_of_analysis.csv"
+output_file = "C:/Users/ilung/Documents/diagnostic_tool/output/results_of_analysis.csv"
 
 # Loading relevant files
 study_area = gpd.read_file(study_area_input_file)
@@ -81,3 +81,4 @@ for item in dataset_dict:
 results_df = pd.DataFrame(list(analysis_results.items()), columns=["PERIMETRE", "VALEUR"])
 results_df.to_csv(output_file, index=False)
 print ("Analyse terminé.")                 
+
